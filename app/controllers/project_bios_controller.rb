@@ -1,0 +1,2 @@
+class ProjectBiosController < ApplicationController
+end

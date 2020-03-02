@@ -1,0 +1,15 @@
+<div class="col-sm-3 single-post-card" id=<%= project_bio_path(project_bio.id) %>>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="post-text">
+        <%= truncate(project_bio.title, :length => 60) %>
+      </h4>
+      <div class="post-content">
+        <div class="posted-by">Posted by <%= project_bio.user.name %></div>
+        <h3><%= project_bio.title %></h3>
+        <p><%= project_bio.content %></p>
+        <%= link_to "Donate", project_bio_path(project_bio.id), class: 'interested' %>
+      </div>
+    </div>
+  </div><!-- card -->
+</div><!-- col-sm-3 -->
