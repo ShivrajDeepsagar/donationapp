@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic Donations app built using Ruby on Rails and Stripe as the payment gateway.
 
-Things you may want to cover:
+* Ruby version-- ruby-2.5.0
 
-* Ruby version
+* Rails version-- 5.0.0
 
-* System dependencies
+* Database -- Postgresql
 
-* Configuration
+Please run these to seed the sample data
 
-* Database creation
+rake db:create
+rake db:migrate
+rake db:seed
 
-* Database initialization
+Run in the terminal to access Stripe api:
+export PUBLISHABLE_KEY='pk_test_1AvQXEBWX3LoMyXUdW2g0XRp00pOBiC40r'
+export SECRET_KEY='sk_test_JrmG8xvpyNOig1yjCwUNHWRw00S3n2R0Y1'
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails s
